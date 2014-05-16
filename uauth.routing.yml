@@ -1,0 +1,9 @@
+uauth_page:
+  path: '/uauth/login'
+  options:
+    _auth: [ 'basic_auth' ]
+  defaults:
+    _content: 'Drupal\uauth\Controller\UauthController::uauthPage'
+    _title: 'A simple module'
+  requirements:
+    _role: 'authenticated , administrator'
