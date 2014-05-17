@@ -1,5 +1,5 @@
 uauth_page:
-  path: '/uauth/login'
+  path: '/user/verify'
   options:
     _auth: [ 'basic_auth' ]
   defaults:
