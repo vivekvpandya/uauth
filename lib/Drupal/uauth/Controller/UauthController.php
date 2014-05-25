@@ -27,9 +27,12 @@ $account = $this->currentUser();
 $userName = $account->getUsername();
 $email = $account->getEmail();
 $roles = $account->getRoles();
+$uid = $account->id();
+
 $responseArray = array('name' => $userName,
                         'email' => $email,
-                        'roles' => $roles
+                        'roles' => $roles,
+                        'uid' => $uid
 
 );
 $response = new Response(json_encode($responseArray));
